@@ -1,21 +1,30 @@
-# Logging Module for quick-scripts
+# Quick Scripts - Environment Config Example
 
-This module provides integration for logging in a microservices architecture using:
-- Python's built-in logging module
-- Apache Pulsar for distributed message logging
-- LangChain for tracing and callback support
+This repository contains example scripts for setting up environment configurations in a microservices architecture using Pulsar, LangChain, and Python.
 
 ## Features
-- Centralized logging to file
-- Pulsar-based message logging
-- LangChain integration for tracing
+- Environment variable configuration
+- Pulsar client setup
+- LangChain integration with OpenAI
+- Microservice API client
 
 ## Usage
-Run the `main()` function in `logging_module.py` to see an example of logging with both Pulsar and LangChain.
+1. Set environment variables in `.env`
+2. Run `scripts/environment_config.py`
+3. Use functions to interact with services
 
 ## Requirements
-- pulsar-client
-- langchain
+- Python 3.8+
+- Pulsar
+- LangChain
+- OpenAI API key
+- Requests
 
-## Contributed by
-Shirley Kane
+## Contributing
+Fork the project, make your changes, and submit a pull request.
+
+## License
+MIT
+
+## Star this project
+If you found this useful, please consider starring the project on GitHub: [https://github.com/ShirleyKane/quick-scripts](https://github.com/ShirleyKane/quick-scripts)
