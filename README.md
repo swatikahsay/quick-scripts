@@ -1,36 +1,21 @@
-# changelog_generator
+# Logging Module for quick-scripts
 
-A simple Python script to generate a changelog between two dates. Useful for microservices or projects using Pulsar/LangChain.
+This module provides integration for logging in a microservices architecture using:
+- Python's built-in logging module
+- Apache Pulsar for distributed message logging
+- LangChain for tracing and callback support
 
 ## Features
-- Generates a changelog between two dates
-- Validates date format
-- Simulated data for demonstration purposes
+- Centralized logging to file
+- Pulsar-based message logging
+- LangChain integration for tracing
 
 ## Usage
-To use this script, simply run:
+Run the `main()` function in `logging_module.py` to see an example of logging with both Pulsar and LangChain.
 
-```bash
-python changelog_generator.py
-```
+## Requirements
+- pulsar-client
+- langchain
 
-You can also call the `generate_changelog` function programmatically with a start and end date.
-
-## Example Output
-```
-Changelog from 2025-01-01 to 2025-01-10:
-========================================
-- 2025-01-01: Initial commit
-- 2025-01-02: Initial commit
-- 2025-01-03: Initial commit
-...
-```
-
-## License
-MIT License
-
-## Contributing
-Feel free to open an issue or submit a pull request!
-
-## Star the project
-If you find this useful, consider starring the project on GitHub!
+## Contributed by
+Shirley Kane

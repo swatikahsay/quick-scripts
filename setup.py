@@ -1,28 +1,21 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='changelog_generator',
+    name='quick-logging',
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
-        'pulsar-client>=2.0.0',
-        'langchain>=0.3.0',
-        'datetime',
-        'click'
+        'pulsar-client>=2.8.0',
+        'langchain>=0.0.254',
     ],
-    entry_points={
-        'console_scripts': [
-            'changelog=changelog_generator:generate_changelog'
-        ]
-    },
     author='Shirley Kane',
-    author_email='shirley@example.com',
-    description='A changelog generator for microservices and LangChain/Pulsar projects',
+    author_email='shirley.kane@example.com',
+    description='Logging integration module for quick-scripts',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/shirleykane/changelog-generator',
+    url='https://github.com/shirleykane/quick-scripts',
     classifiers=[
-        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
